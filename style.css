@@ -16,7 +16,12 @@
     #main-content .title-image img{
         width: 100%;
     }
-    
+
+.author{
+    margin: 50rem;
+    text-align:center;
+    align-items: center;
+}    
 .lines{
     width: 900px;
     background:white;
@@ -36,7 +41,13 @@ font-size: 15px;
 color: #545454;
 text-align: justify;
 }
+.strong{
+    font-family:monospace;
+    font-style: normal;
+    font-size: 15px;
+}
 .beginning{
+    
 font-style: italic;
 font-family: Georgia, 'Times New Roman', Times, serif
 }
@@ -125,8 +136,9 @@ font-family: Georgia, 'Times New Roman', Times, serif
 
 #social-media{
     margin: 1rem auto;
+    display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
 }
     #social-media .social-button{
@@ -207,9 +219,10 @@ font-family: Georgia, 'Times New Roman', Times, serif
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 100%;
     outline: none;
     background-color: transparent;
+    border-color: transparent;
 
 }
 
@@ -218,8 +231,10 @@ font-family: Georgia, 'Times New Roman', Times, serif
     background-size: cover;
     background-position: center;  
     background-repeat: no-repeat;
-    border-image-width: 50%;
-    width: 30px;
+    border-color: transparent;
+    border-image-width: 15px;
+    border-radius: 15%;
+    width: 50px;
     height: 30px;
     outline: none;
     background-color: transparent;
@@ -261,4 +276,233 @@ footer{
 }
 .basic{
     font-size: 1.5rem;
+}
+.article{
+   
+    margin-bottom: 0.78125rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+}
+.video{
+    margin-bottom: 0.78125rem;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+}
+.other-paragraphs{
+    margin-bottom: 0.78125rem;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+}
+.last-picture{
+    margin-bottom: 0.78125rem;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+   width: 100px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+}
+.version{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 600px;
+    color: #ABB2B9;
+}
+.button-version{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 500px;
+    width: 10rem;
+}
+#comments button{
+    border: 2px solid black;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0.78125rem;
+    width: calc(100% - 40px);
+
+}
+.footer-container #social-media{
+    justify-content: space-between;
+    width: 30%;
+    margin: 0;
+    
+}
+.footer-container #buttons{
+    width: auto;
+    margin: 0%;
+}
+.footer-container #buttons button{
+    margin: 0%;
+} 
+.sign-up{
+    display: flex;
+    width: 98%;
+    padding: 20px;
+    border-top: 1px solid black;
+    margin: 10px;
+    justify-content: space-around;
+}
+.text{
+    width: 40%;
+}
+.formulario{
+    width: 40%;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem; 
+    margin-bottom: 2rem;
+    margin: 2rem;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-content: right;   
+}
+.entry-label{
+    display: flex;
+    margin-bottom: 10px;
+}
+.entry-label input, button{
+    padding: 10px 20px;
+    font-size: .7rem;
+    border: 0px;
+    border: 1px solid rgba(0,0,0,.2)
+}
+.entry-label input{
+    width: 70%;   
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.entry-label button{
+    width: 30%;
+    background: #6288a5;
+    color: white;
+    border-right: 0px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.checkbox-label{
+    margin-bottom: 10px;
+}
+form a{
+    font-size: .7rem;
+    color: #6288a5;
+}
+
+a{
+    color: #6288a5;
+}
+.science{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.related-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+.articles-related{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+}
+
+.article-related {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    margin: 8px;
+}
+
+img.article-related-thumb {
+    max-width: 100%;
+}
+
+.footer-ny-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer-sections-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-sections-list div h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.ad-fixed-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgb(51, 51, 51);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad-fixed-bottom a{
+    color: white;
+    text-decoration: none;
+}
+
+ul.footer-site-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-site-info{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+
+}
+
+.editor{
+display: flex;
+
 }
