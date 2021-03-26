@@ -31,7 +31,7 @@ If you click in the link, you can see and read my project.
 
 - GitHub: [ @ivaan1992](https://github.com/ivaan1992)
 - Twitter: [@ivangaona92](https://twitter.com/ivangaona92)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ivan-linares-gaona/)
+- LinkedIn: [https://www.linkedin.com/in/ivan-linares-gaona/](https://www.linkedin.com/in/ivan-linares-gaona/)
 
 
 ## 🤝 Contributing
