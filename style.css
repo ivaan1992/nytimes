@@ -1,508 +1,535 @@
+.texto {
+  color: black;
+  text-decoration: none;
+  width: 300px;
+  font-weight: bold;
+}
 
-#main-content
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
+#main-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
 }
-    #main-content .article,
-    #main-content .title-image{
-       text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #main-content .title-image img{
-        width: 100%;
-    }
 
-.author{
-    margin: 50rem;
-    text-align:center;
-    align-items: center;
-}    
-.lines{
-    width: 900px;
-    background:white;
-    text-align: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-   
-}    
-.article{
-    font-size: 15px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
+.columns img {
+  max-width: 100%;
 }
-.color
-{
-font-size: 15px;
-color: #545454;
-text-align: justify;
+
+#title img {
+  width: 200px;
 }
-.strong{
-    font-family:monospace;
-    font-style: normal;
-    font-size: 15px;
+
+.article {
+  margin-bottom: 0.78125rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+  text-align: left;
 }
-.beginning{
-    
-font-style: italic;
-font-family: Georgia, 'Times New Roman', Times, serif
+
+#main-content .article,
+#main-content .title-image {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.beginning button{
-    width: 80px;
-    height: 30px;
-    color: black;
-    transition: all .2s;
+
+#main-content .title-image img {
+  width: 100%;
 }
-#beginning .beginning-button:hover{
-    background-color: transparent;
-    border: 1px solid white;
+
+.author {
+  margin: 50rem;
+  text-align: center;
+  align-items: center;
+}
+
+.lines {
+  width: 900px;
+  background: white;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.color {
+  font-size: 15px;
+  color: #545454;
+  text-align: justify;
+}
+
+.strong {
+  font-family: monospace;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.beginning {
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.entry-label input,
+button {
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.beginning button {
+  width: 80px;
+  height: 30px;
+  color: black;
+  transition: all 0.2s;
+}
+
+#beginning .beginning-button:hover {
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 #navbar {
   display: flex;
-  contain: center;
   align-items: center;
   width: 100%;
   line-height: 100%;
-  border-bottom: 1px solid #D1D1D1;
+  border-bottom: 1px solid #d1d1d1;
 }
-.menu-buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 50px;
-    width: 10rem;
- 
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 50px;
+  width: 10rem;
 }
-.menu{
-    width: 50px;
-   
+
+.menu {
+  width: 50px;
 }
-#title img{
-    width: 200px;
-    
-}
+
 #title {
-    width:700px;
-    justify-content: center;
-   
-    display: flex;
+  width: 700px;
+  justify-content: center;
+  display: flex;
 }
+
 .buscar {
-    width: 50px;
-    
+  width: 50px;
 }
 
-.texto {
-    width: 300px;
-    font-weight: bold;
-   
-}
-#buttons{
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-   
-}
-#buttons button{
-    border: 0;
-    padding: .5rem 1rem;
-    border-radius: .3rem;
-    color: white;
-    background-color: #567b95;
-    border: 1px solid #326891;
-    margin-left: 20px;
-    cursor: pointer;
-
-}
-.line{
-    width: 100%;
-    height: 1px;
-    background:#ccc;
+.buttons {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.title-article{
-    margin: 2rem auto;
-    width: 450px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   }
-
-#social-media{
-    margin: 1rem auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+.entry-label button {
+  width: 30%;
+  background: #6288a5;
+  color: white;
+  border-right: 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
-    #social-media .social-button{
-        border: 0;
-        cursor: pointer;
-        background-color: lightgray;
-        background-size: 1.5rem auto;
-        transition: all .2s;
-    }
-    #social-media .social-button:hover{
-        background-color: transparent;
-        border: 1px solid lightgray;
-    }
 
-.Facebook{
-    background: #ccc;
-    background-image: url(facebook.png);
-    background-size: 2rem auto;
-    background-position: center;  
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    outline: none;
-    
+.buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.title-article {
+  margin: 2rem auto;
+  width: 450px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.social-media {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social-media .social-button {
+  border: 0;
+  cursor: pointer;
+  background-color: lightgray;
+  background-size: 1.5rem auto;
+  transition: all 0.2s;
+}
+
+.social-media .social-button:hover {
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+
+.Facebook {
+  background: #ccc;
+  background-image: url(facebook.png);
+  background-size: 2rem auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  outline: none;
 }
 
 .Whatsapp {
-    background: #ccc;
-    background-image: url(whatsapp.png);
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    outline: none;
+  background: #ccc;
+  background-image: url(whatsapp.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
 }
 
 .Twitter {
-    background: #ccc;
-    background-image: url(twitter.png);
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    outline: none;
+  background: #ccc;
+  background-image: url(twitter.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
 }
 
-.Email{
-    background-image: url(email.png);
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    outline: none;
+.Email {
+  background-image: url(email.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
 }
 
-.Share{
-    background-image: url(share.png);
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    outline: none;
+.Share {
+  background-image: url(share.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
 }
 
-#social-media .Guardar{
-    background-image: url(guardar.png);
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    outline: none;
-    background-color: transparent;
-    border-color: transparent;
-
+.social-media .Guardar {
+  background-image: url(guardar.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  outline: none;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-#social-media .Comentarios{
-    background-image: url(comentarios.png);
-    background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat;
-    border-color: transparent;
-    border-image-width: 15px;
-    border-radius: 15%;
-    width: 50px;
-    height: 30px;
-    outline: none;
-    background-color: transparent;
-}
-.columns img{
-    max-width: 100%;   
-}
-.columns{
-    box-sizing: border-box;
-    color: #444;
-    float:right;
-    padding: 1em;
-  
-    width: 25%;
-    
-}
-.universe{
-    display: flex;
-    flex-wrap: wrap;
-}
-.video{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-align: left;
-}
-.coloor{
-font-size: 10px;
-color: #545454;
-text-align: left;
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-footer{
-    font-size: .8rem;
-}
-.basic{
-    font-size: 1.5rem;
-}
-.article{
-   
-    margin-bottom: 0.78125rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: calc(100% - 40px);
-    max-width: 600px;
-}
-.video{
-    margin-bottom: 0.78125rem;
-    font-family: nyt-imperial,georgia,'times new roman',times,serif;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: calc(100% - 40px);
-    max-width: 600px;
-}
-.other-paragraphs{
-    margin-bottom: 0.78125rem;
-    font-family: nyt-imperial,georgia,'times new roman',times,serif;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: calc(100% - 40px);
-    max-width: 600px;
-}
-.last-picture{
-    margin-bottom: 0.78125rem;
-    font-family: nyt-imperial,georgia,'times new roman',times,serif;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-   width: 100px;
-    margin-right: 20px;
-    width: calc(100% - 40px);
-    max-width: 600px;
-}
-.version{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 11px;
-    margin-left: 20px;
-    margin-right: 20px;
-    max-width: 600px;
-    color: #ABB2B9;
-}
-.button-version{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 500px;
-    width: 10rem;
-}
-#comments button{
-    border: 2px solid black;
-}
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 0.78125rem;
-    width: calc(100% - 40px);
-
-}
-.footer-container #social-media{
-    justify-content: space-between;
-    width: 30%;
-    margin: 0;
-    
-}
-.footer-container #buttons{
-    width: auto;
-    margin: 0%;
-}
-.footer-container #buttons button{
-    margin: 0%;
-} 
-.sign-up{
-    display: flex;
-    width: 98%;
-    padding: 20px;
-    border-top: 1px solid black;
-    margin: 10px;
-    justify-content: space-around;
-}
-.text{
-    width: 40%;
-}
-.formulario{
-    width: 40%;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    margin-left: 2rem; 
-    margin-bottom: 2rem;
-    margin: 2rem;
-}
-.formulario form{
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    align-content: right;   
-}
-.entry-label{
-    display: flex;
-    margin-bottom: 10px;
-}
-.entry-label input, button{
-    padding: 10px 20px;
-    font-size: .7rem;
-    border: 0px;
-    border: 1px solid rgba(0,0,0,.2)
-}
-.entry-label input{
-    width: 70%;   
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.entry-label button{
-    width: 30%;
-    background: #6288a5;
-    color: white;
-    border-right: 0px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.checkbox-label{
-    margin-bottom: 10px;
-}
-form a{
-    font-size: .7rem;
-    color: #6288a5;
+.social-media .Comentarios {
+  background-image: url(comentarios.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  border-image-width: 15px;
+  border-radius: 15%;
+  width: 50px;
+  height: 30px;
+  outline: none;
+  background-color: transparent;
 }
 
-a{
-    color: #6288a5;
-}
-.science{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.columns {
+  box-sizing: border-box;
+  color: #444;
+  float: right;
+  padding: 1em;
+  width: 25%;
 }
 
-.related-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 3rem;
+.universe {
+  display: flex;
+  flex-wrap: wrap;
 }
-.articles-related{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 70%;
+
+.video {
+  text-align: left;
+  margin-bottom: 0.78125rem;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+}
+
+.coloor {
+  font-size: 10px;
+  color: #545454;
+  text-align: left;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+.basic {
+  font-size: 1.5rem;
+}
+
+.other-paragraphs {
+  margin-bottom: 0.78125rem;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+}
+
+.last-picture {
+  margin-bottom: 0.78125rem;
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+}
+
+.version {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 600px;
+  color: #abb2b9;
+}
+
+.button-version {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 500px;
+  width: 10rem;
+}
+
+.footer-container .buttons {
+  width: auto;
+  margin: 0%;
+}
+
+.footer-container .buttons button {
+  margin: 0%;
+}
+
+#comments button {
+  border: 2px solid black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0.78125rem;
+  width: calc(100% - 40px);
+}
+
+.footer-container .social-media {
+  justify-content: space-between;
+  width: 30%;
+  margin: 0;
+}
+
+.sign-up {
+  display: flex;
+  width: 98%;
+  padding: 20px;
+  border-top: 1px solid black;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.text {
+  width: 40%;
+}
+
+.formulario {
+  width: 40%;
+  margin: 2rem;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-content: flex-end;
+}
+
+.entry-label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.entry-label input {
+  width: 70%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.checkbox-label {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #6288a5;
+}
+
+form a {
+  font-size: 0.7rem;
+  color: #6288a5;
+}
+
+.science {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.related-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.articles-related {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
 }
 
 .article-related {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 30%;
-    margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 30%;
+  margin: 8px;
 }
 
 img.article-related-thumb {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.footer-ny-logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
+.footer-ny-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-.footer-sections-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.footer-sections-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 .footer-sections-list div h5 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.ad-fixed-bottom{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: rgb(51, 51, 51);
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ad-fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgb(51, 51, 51);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.ad-fixed-bottom a{
-    color: white;
-    text-decoration: none;
+.ad-fixed-bottom a {
+  color: white;
+  text-decoration: none;
 }
 
-ul.footer-site-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
+ul.footer-site-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.container-site-info{
-    margin-bottom: 5rem;
-    margin-top: 1rem;
-
+.container-site-info {
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
-.editor{
-display: flex;
+.editor {
+  display: flex;
+}
 
+.subscribe {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.normal-a-tag {
+  color: black;
+  text-decoration: none;
+}
+
+.attached-video {
+  border: 0;
 }
